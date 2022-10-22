@@ -3,23 +3,31 @@
   box-sizing: border-box;
   background-color: #ffffff;
 }
-h1 {
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container-title {
   text-align: center;
-  margin: 120px 120px 20px 120px;
+  margin: 120px auto 20px;
 }
 hr {
   width: 100px;
-  height: 4px;
-  background-color: #f5bd41;
+  line-height: 4px;
+  border: solid #f5bd41;
   margin: auto;
 }
-.icons {
-  display: flex;
-  justify-content: space-between;
-  margin: 84px 104px 60px;
+.container-item {
+  margin-top: 80px;
 }
-.signs {
+.item {
   display: flex;
+}
+.icons {
+  flex: 1;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin: 60px 104px 122px;
+  flex-direction: column;
+  gap: 20px;
 }
