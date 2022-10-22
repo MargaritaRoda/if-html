@@ -6,10 +6,11 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 120px 0;
 }
 .container-title {
   text-align: center;
-  margin: 120px auto 20px;
+  margin: 0 auto 20px;
 }
 hr {
   width: 100px;
@@ -17,10 +18,9 @@ hr {
   border: solid #f5bd41;
   margin: auto;
 }
-.container-item {
-  margin-top: 80px;
-}
+
 .item {
+  margin-top: 80px;
   display: flex;
 }
 .icons {
