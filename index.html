@@ -29,14 +29,13 @@
 
         <div class="page">
           <div class="page-title">
-            <h4>Discover stays</h4>
-            <h4>to live, work or just relax</h4>
+            <h4>Discover stays<br/>
+            to live, work or just relax</h4>
           </div>
           <form action="/" class="form">
             <div class="form-row form-row-dest">
               <label for="place" class="label"
-                >Your destination or hotel name:</label
-              >
+                >Your destination or hotel name:</label>
               <input
                 type="text"
                 id="place"
@@ -48,6 +47,10 @@
             </div>
             <div class="form-row form-row-calendar">
               <label for="calendar" class="label">Check-in — Check-out</label>
+              <div class="form-input-wraper" style="background: white;
+display: flex;
+align-items: stretch;
+flex-direction: column;">
               <input
                 type="text"
                 id="calendar"
@@ -56,6 +59,7 @@
                 required
                 class="calendar"
               />
+              </div>
             </div>
             <div class="form-row form-row-adult">
               <label for="adult" class="label"></label>
@@ -69,7 +73,9 @@
               />
             </div>
             <div class="form-row form-row-btn">
+              <div class="form-btn-wraper">
               <button type="submit">Search</button>
+              </div>
             </div>
           </form>
         </div>
