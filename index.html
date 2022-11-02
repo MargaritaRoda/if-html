@@ -1,11 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./style/styles.css" />
     <title>Title</title>
   </head>
   <body>
+    <div class="top-section">
+      <div class="container">
+        <div class="header">
+          <div class="logo">
+            <img src="./images/top-section/TripHouse.svg" alt="logo" />
+          </div>
+          <div class="right-group">
+            <div class="stay">
+              <a href="#">Stays</a>
+              <hr />
+            </div>
+            <div class="attraction"><a href="#">Attractions</a></div>
+            <div class="night">
+              <img src="./images/top-section/Night.svg" alt="Night" />
+            </div>
+            <div class="account">
+              <img src="./images/top-section/Account.svg" alt="Account" />
+            </div>
+          </div>
+        </div>
+
+        <div class="page">
+          <div class="page-title">
+            <h4>Discover stays<br/>
+            to live, work or just relax</h4>
+          </div>
+          <form action="/" class="form">
+            <div class="form-row form-row-dest">
+              <label for="place" class="label"
+                >Your destination or hotel name:</label>
+              <input
+                type="text"
+                id="place"
+                name="place"
+                placeholder="New York"
+                required
+                class="place"
+              />
+            </div>
+            <div class="form-row form-row-calendar">
+              <label for="calendar" class="label">Check-in — Check-out</label>
+              <div class="form-input-wraper">
+              <input
+                type="text"
+                id="calendar"
+                name="calendar"
+                placeholder="Tue 15 Sept — Sat 19 Sept"
+                required
+                class="calendar"
+              />
+              </div>
+            </div>
+            <div class="form-row form-row-adult">
+              <label for="adult" class="label"></label>
+              <input
+                type="text"
+                id="adult"
+                name="adult"
+                placeholder="2 Adults — 0 Children — 1 Room"
+                required
+                class="adult"
+              />
+            </div>
+            <div class="form-row form-row-btn">
+              <div class="form-btn-wraper">
+              <button type="submit">Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="page-app">
+          <div class="google">
+            <img src="./images/top-section/GooglePlay.svg" alt="google" />
+          </div>
+          <div class="apple">
+            <img src="./images/top-section/AppStore.svg" alt="appstore" />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <div class="container-title">
         <h2>What do we offer</h2>
@@ -13,19 +94,19 @@
       <hr />
       <div class="item">
         <div class="icons">
-          <img src="./images/support.svg" alt="support" />
+          <img src="./images/Advantages/support.svg" alt="support" />
           <p>Support 24/7</p>
         </div>
         <div class="icons">
-          <img src="./images/message.svg" alt="message" />
+          <img src="./images/Advantages/message.svg" alt="message" />
           <p>Communicate directly</p>
         </div>
         <div class="icons">
-          <img src="./images/book.svg" alt="book-online" />
+          <img src="./images/Advantages/book.svg" alt="book-online" />
           <p>Book online</p>
         </div>
         <div class="icons">
-          <img src="./images/like.svg" alt="like" />
+          <img src="./images/Advantages/like.svg" alt="like" />
           <p>Real guest review</p>
         </div>
       </div>
