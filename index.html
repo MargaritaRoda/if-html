@@ -2,12 +2,13 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
     <link rel="stylesheet" href="./style/styles.css" />
     <title>Title</title>
   </head>
   <body>
-    <svg xmlns="http://www.w3.org/2000/svg">
-      <symbol id="google" width="135" height="40" viewBox="0 0 135 40">
+    <svg class="google-sprite" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="google" viewBox="0 0 135 40">
         <path
           d="M130 39.9999H5C2.25 39.9999 0 37.75 0 35V4.99999C0 2.25 2.25 0 5 0H130C132.75 0 135 2.25 135 4.99999V35C135 37.75 132.75 39.9999 130 39.9999Z"
           fill="black"
@@ -282,26 +283,26 @@
       <h2 class="section-benefits__title">What do we offer</h2>
       <hr class="section-benefits__hr" />
       <div class="section-benefits__items">
-        <div class="section-benefits__item">
+        <div class="section-benefits__item col-lg-3 col-md-6 col-xs-4">
           <svg class="section-benefits__icon section-benefits__icon--sup">
             <use href="../images/sprite.svg/#support" />
           </svg>
           <p>Support 24/7</p>
         </div>
-        <div class="section-benefits__item">
+        <div class="section-benefits__item col-lg-3 col-md-6 col-xs-4">
           <svg class="section-benefits__icon section-benefits__icon--message">
             <use href="../images/sprite.svg/#message" />
           </svg>
           <p>Communicate directly</p>
         </div>
-        <div class="section-benefits__item">
+        <div class="section-benefits__item col-lg-3 col-md-6 col-xs-4">
           <svg class="section-benefits__icon section-benefits__icon--book">
             <use href="../images/sprite.svg/#book" />
           </svg>
 
           <p>Book online</p>
         </div>
-        <div class="section-benefits__item">
+        <div class="section-benefits__item col-lg-3 col-md-6 col-xs-4">
           <svg class="section-benefits__icon section-benefits__icon--like">
             <use href="../images/sprite.svg/#like" />
           </svg>
@@ -311,19 +312,30 @@
     </div>
 
     <div class="footer">
-      <div class="container">
-        <div class="footer__items">
+      <div class="container footer__container">
+        <div class="footer__logo footer__logo--mobile col-xs-2">
+          <svg class="footer__logo-icon">
+            <use href="../images/sprite.svg/#logo" />
+          </svg>
+        </div>
+        <div class="footer__items col-xs-5">
           <div class="footer__item">
             <ul class="footer__links">
               <li class="footer__links-item">
                 <h3 class="footer__links-header">About</h3>
               </li>
-              <li class="footer__links-item">
+              <li class="footer__links-item footer__links-item--mobile">
                 <a href="#">How to Triphouse works</a>
               </li>
-              <li class="footer__links-item"><a href="#">Careers</a></li>
-              <li class="footer__links-item"><a href="#">Privacy</a></li>
-              <li class="footer__links-item"><a href="#">Terms</a></li>
+              <li class="footer__links-item footer__links-item--mobile">
+                <a href="#">Careers</a>
+              </li>
+              <li class="footer__links-item footer__links-item--mobile">
+                <a href="#">Privacy</a>
+              </li>
+              <li class="footer__links-item footer__links-item--mobile">
+                <a href="#">Terms</a>
+              </li>
             </ul>
           </div>
           <div class="footer__item">
@@ -331,12 +343,24 @@
               <li class="footer__links-item">
                 <h3 class="footer__links-header">Property types</h3>
               </li>
-              <li class="footer__links-item"><a href="#">Guest houses</a></li>
-              <li class="footer__links-item"><a href="#">Hotels</a></li>
-              <li class="footer__links-item"><a href="#">Apartments</a></li>
-              <li class="footer__links-item"><a href="#">Villas</a></li>
-              <li class="footer__links-item"><a href="#">Holiday homes</a></li>
-              <li class="footer__links-item"><a href="#">Hostels</a></li>
+              <li class="footer__links-item footer__links-item--mobile">
+                <a href="#">Guest houses</a>
+              </li>
+              <li class="footer__links-item footer__links-item--mobile">
+                <a href="#">Hotels</a>
+              </li>
+              <li class="footer__links-item footer__links-item--mobile">
+                <a href="#">Apartments</a>
+              </li>
+              <li class="footer__links-item footer__links-item--mobile">
+                <a href="#">Villas</a>
+              </li>
+              <li class="footer__links-item footer__links-item--mobile">
+                <a href="#">Holiday homes</a>
+              </li>
+              <li class="footer__links-item footer__links-item--mobile">
+                <a href="#">Hostels</a>
+              </li>
             </ul>
           </div>
           <div class="footer__item">
@@ -344,14 +368,16 @@
               <li class="footer__links-item">
                 <h3 class="footer__links-header">Support</h3>
               </li>
-              <li class="footer__links-item">
+              <li class="footer__links-item footer__links-item--mobile">
                 <a href="#">Contact customer service</a>
               </li>
-              <li class="footer__links-item"><a href="#">FAQ</a></li>
+              <li class="footer__links-item footer__links-item--mobile">
+                <a href="#">FAQ</a>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="footer__copyright">
+        <div class="footer__copyright col-lg-3 col-xs-5">
           © 2022 Triphouse, Inc. All rights reserved
         </div>
       </div>
