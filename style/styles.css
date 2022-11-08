@@ -176,11 +176,22 @@ h6 {
   font-size: 50px;
   margin-bottom: 100px;
 }
+@media (max-width: 360px) {
+  .top-section__title {
+    font-size: 30px;
+    margin: 88px auto 31px;
+  }
+}
 
 .top-section__body {
   display: flex;
   flex-direction: column;
   margin: 202px 0 120px;
+}
+@media (max-width: 360px) {
+  .top-section__body {
+    margin: 0 auto 32px;
+  }
 }
 
 .top-section__form {
@@ -189,6 +200,12 @@ h6 {
   font-size: 18px;
   align-items: stretch;
 }
+@media (max-width: 360px) {
+  .top-section__form {
+
+  }
+}
+
 .top-section__form-row {
   display: flex;
   flex-direction: column;
@@ -198,53 +215,135 @@ h6 {
 }
 
 .top-section__form-row--dest {
-  flex: 1;
+  max-width: 33%;
 }
+@media (max-width: 360px) {
+  .top-section__form-row--dest {
+    max-width: 100%;
+  }
+}
+
 
 .top-section__form-row--calendar {
-  flex: 0 1 21%;
+  max-width: 10%;
 }
 
-.top-section__form-row--adult {
-  flex: 1;
+.top-section__form-row--booking {
+  max-width: 11%;
 }
 
 .top-section__form-row--btn {
   flex: 0 1 190px;
 }
+@media (max-width: 360px) {
+
+}
+
 
 .top-section__form-label {
   padding-left: 24px;
+  /*color: #000;*/
+  margin-bottom: 24px;
+}
+.top-section__input-wrapper {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  background: #fff;
 }
 .top-section__input {
   height: 64px;
   font-size: 18px;
-  border: 3px solid #f3f3f4;
+  border: 3px solid #fff;
   color: #383838;
-  padding-left: 24px;
+  padding-left: 4px;
 }
+
+
 .top-section__input--place {
   border-right: none;
   padding-left: 24px;
   border-radius: 8px 0 0 8px;
 }
 
-.top-section__calendar-wrapper {
-  background: white;
+.top-section__control-wrapper {
+  /*background: #ffffff;*/
   display: flex;
   align-items: stretch;
   flex-direction: column;
 }
 
-.top-section__input--calendar {
+.top-section__input--calendar-in {
   text-align: center;
   border-color: #f5bd41;
+  border-radius: 8px 0 0 8px;
+  border-right: none;
+}
+
+.top-section__input--calendar-out {
+  text-align: center;
+  border-color: #f5bd41;
+  border-radius: 0 8px 8px 0;
+  border-left: none;
+}
+@media (max-width: 360px) {
+.top-section__input--calendar-out {
+  text-align: center;
+  border: 4px solid #f5bd41;
   border-radius: 8px;
+}
+}
+.top-section__form-row--booking .top-section__form-label {
+  display: none;
 }
 
 .top-section__input--adult {
+  /*border-left: none;*/
+  /*border-right: none;*/
+  text-align: end;
+  }
+
+/*@media (max-width: 360px){*/
+/*  .top-section__input--adult {*/
+/*    border-right: none;*/
+/*    border-top: 4px solid #f5bd41;*/
+/*    border-left: 4px solid #F5BD41;*/
+/*    border-bottom: 4px solid #f5bd41;*/
+/*    border-radius: 8px 0 0 8px;*/
+/*    text-align: center;*/
+/*  }*/
+/*}*/
+
+.top-section__input--child {
   border-left: none;
   border-right: none;
+  text-align: center;
+}
+@media (max-width: 360px) {
+  .top-section__input--child {
+    border-left: 1px solid #BFBFBF;
+    border-right: 1px solid #BFBFBF;
+    border-top: 4px solid #F5BD41;
+    border-bottom: 4px solid #f5bd41;
+    text-align: center;
+  }
+}
+
+
+.top-section__input--room {
+  border-left: none;
+  border-right: none;
+  text-align: start;
+}
+@media (max-width: 360px){
+  .top-section__input--room {
+    border-left: none;
+    border-top: 4px solid #f5bd41;
+    border-right: 4px solid #F5BD41;
+    border-bottom: 4px solid #f5bd41;
+    border-radius: 0 8px 8px 0;
+    text-align: center;
+  }
 }
 
 .top-section__btn-wrapper {
@@ -254,17 +353,28 @@ h6 {
   flex-direction: column;
   border-radius: 0 8px 8px 0;
 }
-
+@media (max-width: 360px) {
+  .top-section__btn-wrapper {
+    background: #f5bd41;
+  }
+}
 .top-section__submit-btn {
   height: 64px;
-  width: 190px;
+  width: 100%;
   border-radius: 8px;
   color: #ffffff;
   background-color: #3077c6;
   font-size: 24px;
   border: 1px solid #3077c6;
 }
+@media (max-width: 360px) {
+  .top-section__submit-btn {
+    height: 48px;
+    border-radius: 8px;
+    font-size: 19px;
+     }
 
+}
 .top-section__icons {
   display: flex;
   justify-content: center;
@@ -279,6 +389,93 @@ h6 {
   height: 40px;
 }
 
+@media (max-width: 360px) {
+  .top-section__form {
+    font-size: 15px;
+    max-width: 312px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    background-color: #F5BD41;
+    border: 8px solid #F5BD41 ;
+  }
+  .top-section__form-row {
+    margin-bottom: 8px;
+    padding: 5px 0;
+    background: #fff;
+    border-radius: 8px;
+  }
+  .top-section__form-label--dest {
+    display: none;
+  }
+  .top-section__form-label {
+    padding: 0 0 0 5px;
+    margin: 0;
+  }
+  .top-section__form-row--calendar {
+    max-width: calc(50% - 4px);
+  }
+  .top-section__form-row--calendar--in {
+    margin-right: 4px;
+  }
+  .top-section__form-row--calendar--out {
+    margin-left: 4px;
+  }
+  .top-section__form-row--booking {
+    max-width: calc(100% / 3);
+  }
+  /*.top-section__form-row--adult:nth(1) {*/
+  /*  border: none;*/
+  /*}*/
+  .top-section__control-wrapper {
+    background: #fff;
+    font-size: 12px;
+    color: #383838;
+  }
+  .top-section__input {
+    height: 48px;
+    font-size: 15px;
+  }
+  .top-section__input--labeled {
+    text-align: left;
+    padding: 0 5px;
+    border: none;
+    border-radius: 8px;
+    height: 24px;
+  }
+  .top-section__input--place {
+    border: none;
+    height: 38px;
+  }
+  .top-section__form-row--adult{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .top-section__control-wrapper--child {
+    border-radius: 0;
+    border-right: 1px solid #383838;
+    border-left: 1px solid #383838;
+  }
+  .top-section__form-row--child {
+    border-radius: 0;
+  }
+  .top-section__control-wrapper--child {
+    border-right: 1px solid #383838;
+    border-left: 1px solid #383838;
+  }
+  .top-section__form-row--room {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .top-section__form-row--btn {
+    padding: 0;
+    margin-bottom: 0;
+    flex: 1;
+  }
+  .top-section__form-row--booking .top-section__form-label {
+    display: block;
+  }
+}
+
 /* top-section ends */
 
 /* header starts */
@@ -291,11 +488,24 @@ h6 {
   font-size: 24px;
   align-items: center;
 }
+
+@media (max-width: 360px) {
+  .header {
+    margin: 0 16px;
+  }
+
+}
+
 .header__logo-icon {
   width: 100%;
   max-width: 205px;
   aspect-ratio: 205/40;
   fill: #3077c6;
+}
+@media (max-width: 360px) {
+  .header__logo-icon {
+    max-width: 122px;
+  }
 }
 .header__nav {
   display: flex;
@@ -307,6 +517,12 @@ h6 {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 360px) {
+  .header__nav-item--mobile {
+    display: none;
+  }
+}
+
 .header__hr {
   width: 60px;
   line-height: 4px;
@@ -314,15 +530,32 @@ h6 {
   margin-top: 42px;
   position: absolute;
 }
+@media (max-width: 360px) {
+  .header__hr {
+    display: none;
+  }
+}
 .header__nav-item-icon--night {
+  max-width: 100%;
   width: 30px;
-  height: 30px;
+  aspect-ratio: 1/1;
+}
+@media (max-width: 360px) {
+  .header__nav-item-icon--night {
+    width: 16px;
+  }
+}
+.header__nav-item-icon--acc {
+  max-width: 100%;
+  width: 40px;
+  aspect-ratio: 1/1;
+}
+@media (max-width: 360px) {
+  .header__nav-item-icon--acc {
+    width: 24px;
+  }
 }
 
-.header__nav-item-icon--acc {
-  width: 40px;
-  height: 40px;
-}
 /* header ends */
 
 /* section-benefits starts */
