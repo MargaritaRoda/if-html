@@ -399,8 +399,8 @@ h6 {
   }
   .top-section__child-lines {
     border-radius: 0;
-    border-right: 1px solid #383838;
-    border-left: 1px solid #383838;
+    border-right: 1px solid #BFBFBF;
+    border-left: 1px solid #BFBFBF;
   }
   .top-section__form-row--child {
     border-radius: 0;
