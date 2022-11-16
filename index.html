@@ -226,91 +226,81 @@
 
           <form action="/" class="top-section__form">
             <div class="top-section__form-row top-section__form-row--dest">
-              <div class="top-section__control-wrapper">
-                <label
-                  for="place"
-                  class="top-section__form-label top-section__form-label--dest"
-                  >Your destination or hotel name:</label
-                >
-                <input
-                  type="text"
-                  id="place"
-                  name="place"
-                  placeholder="New York"
-                  required
-                  class="top-section__input top-section__input--place"
-                />
-              </div>
+              <label
+                for="place"
+                class="top-section__form-label top-section__form-label--dest"
+                >Your destination or hotel name:</label
+              >
+              <input
+                type="text"
+                id="place"
+                name="place"
+                placeholder="New York"
+                required
+                class="top-section__input top-section__input--place"
+              />
             </div>
             <div
               class="top-section__form-row top-section__form-row--calendar top-section__form-row--calendar--in"
             >
-              <div class="top-section__control-wrapper">
-                <label for="calendar" class="top-section__form-label">
-                  Check-in
-                </label>
-                <div class="top-section__input-wrapper">
-                  <input
-                    type="text"
-                    id="calendar"
-                    name="calendar"
-                    placeholder="Tue 15 Sept"
-                    required
-                    class="top-section__input top-section__input--labeled top-section__input--calendar-in"
-                  />
-                </div>
+              <label for="calendar-in" class="top-section__form-label">
+                Check-in
+              </label>
+              <div class="top-section__input-wrapper">
+                <input
+                  type="text"
+                  id="calendar-in"
+                  name="calendar-in"
+                  placeholder="Tue 15 Sept"
+                  required
+                  class="top-section__input top-section__input--labeled top-section__input--calendar-in"
+                />
               </div>
             </div>
             <div
               class="top-section__form-row top-section__form-row--calendar top-section__form-row--calendar--out"
             >
-              <div class="top-section__control-wrapper">
-                <label for="calendar" class="top-section__form-label">
-                  Check-out
-                </label>
-                <div class="top-section__input-wrapper">
-                  <input
-                    type="text"
-                    id="calendar"
-                    name="calendar"
-                    placeholder="Sat 19 Sept"
-                    required
-                    class="top-section__input top-section__input--labeled top-section__input--calendar-out"
-                  />
-                </div>
+              <label for="calendar-out" class="top-section__form-label">
+                Check-out
+              </label>
+              <div class="top-section__input-wrapper">
+                <input
+                  type="text"
+                  id="calendar-out"
+                  name="calendar-out"
+                  placeholder="Sat 19 Sept"
+                  required
+                  class="top-section__input top-section__input--labeled top-section__input--calendar-out"
+                />
               </div>
             </div>
 
             <div
               class="top-section__form-row top-section__form-row--booking top-section__form-row--adult"
             >
-              <div class="top-section__control-wrapper">
-                <label for="calendar" class="top-section__form-label">
-                  Adults
-                </label>
-                <input
-                  type="text"
-                  id="adult"
-                  name="adult"
-                  placeholder="2 Adults"
-                  required
-                  class="top-section__input top-section__input--labeled top-section__input--adult"
-                />
-              </div>
+              <label for="adult" class="top-section__form-label">
+                Adults
+              </label>
+              <input
+                type="text"
+                id="adult"
+                name="adult"
+                placeholder="2 Adults"
+                required
+                class="top-section__input top-section__input--labeled top-section__input--adult"
+              />
             </div>
             <div
               class="top-section__form-row top-section__form-row--booking top-section__form-row--child"
             >
-              <div
-                class="top-section__control-wrapper top-section__control-wrapper--child"
-              >
-                <label for="calendar" class="top-section__form-label">
+              <div class="top-section__child-lines">
+                <label for="child" class="top-section__form-label">
                   Children
                 </label>
                 <input
                   type="text"
-                  id="adult"
-                  name="adult"
+                  id="child"
+                  name="child"
                   placeholder="- 0 Children -"
                   required
                   class="top-section__input top-section__input--labeled top-section__input--child"
@@ -320,19 +310,15 @@
             <div
               class="top-section__form-row top-section__form-row--booking top-section__form-row--room"
             >
-              <div class="top-section__control-wrapper">
-                <label for="calendar" class="top-section__form-label">
-                  Rooms
-                </label>
-                <input
-                  type="text"
-                  id="adult"
-                  name="adult"
-                  placeholder="1 Room"
-                  required
-                  class="top-section__input top-section__input--labeled top-section__input--room"
-                />
-              </div>
+              <label for="room" class="top-section__form-label"> Rooms </label>
+              <input
+                type="text"
+                id="room"
+                name="room"
+                placeholder="1 Room"
+                required
+                class="top-section__input top-section__input--labeled top-section__input--room"
+              />
             </div>
             <div class="top-section__form-row top-section__form-row--btn">
               <div class="top-section__btn-wrapper">
