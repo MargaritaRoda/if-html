@@ -192,11 +192,13 @@
             </svg>
           </div>
           <div class="header__nav">
-            <div class="header__nav-item">
+            <div class="header__nav-item header__nav-item--mobile">
               <a href="#">Stays</a>
               <hr class="header__hr" />
             </div>
-            <div class="header__nav-item"><a href="#">Attractions</a></div>
+            <div class="header__nav-item header__nav-item--mobile">
+              <a href="#">Attractions</a>
+            </div>
             <div class="header__nav-item">
               <svg class="header__nav-item-icon header__nav-item-icon--night">
                 <use href="../images/sprite.svg/#night" />
@@ -205,6 +207,13 @@
             <div class="header__nav-item">
               <svg class="header__nav-item-icon header__nav-item-icon--acc">
                 <use href="../images/sprite.svg/#account" />
+              </svg>
+            </div>
+            <div class="header__nav-item header__nav-item-icon--mobile-menu">
+              <svg
+                class="header__nav-item-icon header__nav-item-icon--mobile-menu"
+              >
+                <use href="../images/sprite.svg/#mobile-menu" />
               </svg>
             </div>
           </div>
@@ -218,7 +227,9 @@
 
           <form action="/" class="top-section__form">
             <div class="top-section__form-row top-section__form-row--dest">
-              <label for="place" class="top-section__form-label"
+              <label
+                for="place"
+                class="top-section__form-label top-section__form-label--dest"
                 >Your destination or hotel name:</label
               >
               <input
@@ -230,29 +241,84 @@
                 class="top-section__input top-section__input--place"
               />
             </div>
-            <div class="top-section__form-row top-section__form-row--calendar">
-              <label for="calendar" class="top-section__form-label"
-                >Check-in — Check-out</label
-              >
-              <div class="top-section__calendar-wrapper">
+            <div
+              class="top-section__form-row top-section__form-row--calendar top-section__form-row--calendar--in"
+            >
+              <label for="calendar-in" class="top-section__form-label">
+                Check-in
+              </label>
+              <div class="top-section__input-wrapper">
                 <input
                   type="text"
-                  id="calendar"
-                  name="calendar"
-                  placeholder="Tue 15 Sept — Sat 19 Sept"
+                  id="calendar-in"
+                  name="calendar-in"
+                  placeholder="Tue 15 Sept"
                   required
-                  class="top-section__input top-section__input--calendar"
+                  class="top-section__input top-section__input--labeled top-section__input--calendar-in"
                 />
               </div>
             </div>
-            <div class="top-section__form-row top-section__form-row--adult">
+            <div
+              class="top-section__form-row top-section__form-row--calendar top-section__form-row--calendar--out"
+            >
+              <label for="calendar-out" class="top-section__form-label">
+                Check-out
+              </label>
+              <div class="top-section__input-wrapper">
+                <input
+                  type="text"
+                  id="calendar-out"
+                  name="calendar-out"
+                  placeholder="Sat 19 Sept"
+                  required
+                  class="top-section__input top-section__input--labeled top-section__input--calendar-out"
+                />
+              </div>
+            </div>
+
+            <div
+              class="top-section__form-row top-section__form-row--booking top-section__form-row--adult"
+            >
+              <label for="adult" class="top-section__form-label">
+                Adults
+              </label>
               <input
                 type="text"
                 id="adult"
                 name="adult"
-                placeholder="2 Adults — 0 Children — 1 Room"
+                placeholder="2 Adults"
                 required
-                class="top-section__input top-section__input--adult"
+                class="top-section__input top-section__input--labeled top-section__input--adult"
+              />
+            </div>
+            <div
+              class="top-section__form-row top-section__form-row--booking top-section__form-row--child"
+            >
+              <div class="top-section__child-lines">
+                <label for="child" class="top-section__form-label">
+                  Children
+                </label>
+                <input
+                  type="text"
+                  id="child"
+                  name="child"
+                  placeholder="- 0 Children -"
+                  required
+                  class="top-section__input top-section__input--labeled top-section__input--child"
+                />
+              </div>
+            </div>
+            <div
+              class="top-section__form-row top-section__form-row--booking top-section__form-row--room"
+            >
+              <label for="room" class="top-section__form-label"> Rooms </label>
+              <input
+                type="text"
+                id="room"
+                name="room"
+                placeholder="1 Room"
+                required
+                class="top-section__input top-section__input--labeled top-section__input--room"
               />
             </div>
             <div class="top-section__form-row top-section__form-row--btn">
