@@ -400,8 +400,8 @@ h6 {
   }
   .top-section__child-lines {
     border-radius: 0;
-    border-right: 1px solid #BFBFBF;
-    border-left: 1px solid #BFBFBF;
+    border-right: 1px solid #bfbfbf;
+    border-left: 1px solid #bfbfbf;
   }
   .top-section__form-row--child {
     border-radius: 0;
@@ -680,22 +680,12 @@ h6 {
 }
 .homes__item-img {
   background-position: center;
-  background-size: cover;
+  object-fit: cover;
   aspect-ratio: 1/1;
   min-width: 156px;
+  width: 100%;
 }
-.homes__item-img--hotel {
-  background-image: url("../images/Homes/hotel_leopold.png");
-}
-.homes__item-img--apart {
-  background-image: url("../images/Homes/Apartment_Santa_Cruz.png");
-}
-.homes__item-img--villa {
-  background-image: url("../images/Homes/Villa_Kunerad.png");
-}
-.homes__item-img--hostel {
-  background-image: url("../images/Homes/Hostel_friendship.png");
-}
+
 .homes__item-title {
   color: #3077c6;
 }
@@ -812,7 +802,7 @@ h6 {
 
 /* Footer ends */
 
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
   .footer__item {
     display: flex;
     flex: 1;
