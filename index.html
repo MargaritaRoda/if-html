@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" initial-scale="1.0" />
     <link rel="stylesheet" href="./style/styles.css" />
-    <title>Title</title>
+    <title>TripHouse</title>
   </head>
   <body>
     <svg class="google-sprite" xmlns="http://www.w3.org/2000/svg">
@@ -427,6 +427,64 @@
           </div>
           <div class="homes__slider-next">
             <div class="homes__arrow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="best-dest">
+      <div class="container best-dest__container">
+        <h2 class="best-dest__title">The best destinations</h2>
+        <form class="best-dest__row-btn">
+          <input
+            class="best-dest__input"
+            type="radio"
+            id="regions"
+            name="btn"
+          />
+          <label for="regions" class="label-input">Regions</label>
+
+          <input
+            class="best-dest__input"
+            type="radio"
+            id="cities"
+            name="btn"
+            checked="checked"
+          />
+          <label for="cities" class="label-input">Cities</label>
+
+          <input class="best-dest__input" type="radio" id="places" name="btn" />
+          <label for="places" class="label-input">Places of interest</label>
+        </form>
+        <div class="best-dest__slider">
+          <div class="best-dest__items">
+            <div class="best-dest__item">
+              <div class="best-dest__img best-dest__img--maldives">
+                <button class="best-dest__btn">Book now</button>
+              </div>
+              <div class="best-dest__item-title">Maldives</div>
+            </div>
+            <div class="best-dest__item">
+              <div class="best-dest__img best-dest__img--spain">
+                <button class="best-dest__btn">Book now</button>
+              </div>
+              <div class="best-dest__item-title">Spain</div>
+            </div>
+            <div class="best-dest__item">
+              <div class="best-dest__img best-dest__img--norway">
+                <button class="best-dest__btn">Book now</button>
+              </div>
+              <div class="best-dest__item-title">Norway</div>
+            </div>
+            <div class="best-dest__item">
+              <div class="best-dest__img best-dest__img--island">
+                <button class="best-dest__btn">Book now</button>
+              </div>
+              <div class="best-dest__item-title">Island</div>
+            </div>
+          </div>
+          <div class="best-dest__slider-down">
+            <div class="best-dest__arrow-down"></div>
           </div>
         </div>
       </div>
