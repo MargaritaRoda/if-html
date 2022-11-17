@@ -643,12 +643,9 @@ h6 {
   background-color: #eaf0f9;
 }
 .homes__container {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1520px;
-  margin: 0 auto;
   padding: 0 32px 120px;
 }
 .homes__title {
