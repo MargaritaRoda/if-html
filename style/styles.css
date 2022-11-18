@@ -157,10 +157,21 @@ h6 {
 }
 
 .container {
-  max-width: 1520px;
+  max-width: 1232px;
   margin: 0 auto;
-  padding: 120px 32px;
+  padding: 120px 0;
   position: relative;
+}
+
+@media (max-width: 1232px) {
+  .container {
+    padding: 120px 32px;
+  }
+}
+@media (max-width: 760px) {
+  .container {
+    padding: 40px 32px;
+  }
 }
 
 /* top-section starts */
@@ -439,6 +450,12 @@ h6 {
   font-size: 24px;
   align-items: center;
 }
+@media (max-width: 760px){
+  .header {
+    margin-top: 0;
+  }
+
+}
 .header__logo-icon {
   width: 100%;
   max-width: 205px;
@@ -651,11 +668,10 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 32px 120px;
-}
+  }
 .homes__title {
   text-align: center;
-  margin: 120px auto 105px;
+  margin: 0 auto 105px;
   font-size: 40px;
   line-height: 47px;
   color: #383838;
@@ -663,6 +679,7 @@ h6 {
 .homes__slider {
   display: flex;
   position: relative;
+  width: 100%;
 }
 .homes__items {
   display: flex;
@@ -684,6 +701,7 @@ h6 {
   background-position: center;
   object-fit: cover;
   aspect-ratio: 1/1;
+  max-width: 296px;
   min-width: 156px;
   width: 100%;
 }
@@ -743,13 +761,13 @@ h6 {
   .homes__title {
     font-size: 28px;
     line-height: 32px;
-    margin: 40px auto 32px;
+    margin: 0 auto 32px;
   }
 }
 @media (max-width: 360px) {
   /* For mobile phones: */
   .homes__container {
-    padding: 0 14px 40px;
+    padding: 40px 14px;
   }
   .homes__item {
     gap: 4px;
@@ -775,11 +793,10 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 32px 120px;
 }
 .best-dest__title {
   text-align: center;
-  margin: 120px auto 105px;
+  margin: 0 auto 104px;
   font-size: 40px;
   line-height: 47px;
   color: #383838;
@@ -801,23 +818,58 @@ h6 {
   display: flex;
   height: 64px;
   align-items: center;
-  width: 54%;
-  background-color: #F3F3F4;
+  width: 50%;
+  background-color: #f3f3f4;
   color: #383838;
   border-radius: 8px;
   margin-bottom: 65px;
- }
+  place-self: flex-start;
+}
+
+@media (max-width: 600px) {
+  .best-dest__row-btn {
+    height: 32px;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #ffffff;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+}
 
 .label-input {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: calc(100%/3);
+  flex-basis: calc(100% / 3);
   font-size: 24px;
   text-align: center;
   height: 64px;
   border-radius: 8px;
   position: relative;
+}
+@media (max-width: 1200px) {
+  .label-input-mobile {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .label-input {
+    font-size: 19px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid #f3f3f4;
+  }
+}
+@media (max-width: 360px) {
+  .label-input {
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid #f3f3f4;
+  }
+  .label-input-mobile {
+    display: none;
+  }
 }
 
 .best-dest__input {
@@ -825,7 +877,7 @@ h6 {
   visibility: hidden;
 }
 
-.best-dest__input:checked + .label-input{
+.best-dest__input:checked + .label-input {
   color: #ffffff;
   background-color: #3077c6;
   border: 1px solid #3077c6;
@@ -950,7 +1002,7 @@ h6 {
   .best-dest__title {
     font-size: 28px;
     line-height: 32px;
-    margin: 40px auto 32px;
+    margin: 0 auto 32px;
   }
 }
 @media (max-width: 360px) {
@@ -976,12 +1028,158 @@ h6 {
 }
 /* best-dest ends */
 
+/* registration starts */
+.registration__container {
+  background-color: #eaf0f9;
+  padding: 24px;
+  position: relative;
+}
+
+@media (max-width: 360px) {
+  .registration__container {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+    gap: 16px;
+  }
+}
+
+.registration_title {
+  font-size: 24px;
+  color: #383838;
+}
+@media (max-width: 600px) {
+  .registration_title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .registration_title {
+    display: none;
+  }
+}
+
+.registration__title-mobile {
+  display: none;
+  font-size: 12px;
+  font-weight: 400;
+}
+@media (max-width: 360px) {
+  .registration__title-mobile {
+    display: block;
+  }
+}
+
+.registration__wrapper-desktop {
+  display: flex;
+  gap: 21px;
+  flex-direction: column;
+  margin: 27px 110px;
+}
+@media (max-width: 360px) {
+  .registration__wrapper-desktop {
+    display: none;
+  }
+}
+
+.registration__icon {
+  display: flex;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.registration__icon-img {
+  width: 50px;
+  height: 45px;
+  margin: auto auto;
+}
+.registration__button {
+  width: 128px;
+  height: 48px;
+  font-size: 18px;
+  color: #3077c6;
+  border: 1px solid #3077c6;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+@media (max-width: 360px) {
+  .registration__button {
+    display: none;
+  }
+}
+.registration__close-wnd {
+  display: block;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 15%;
+  left: 95%;
+}
+@media (max-width: 600px) {
+  .registration__close-wnd {
+    width: 16px;
+    height: 16px;
+    top: 10%;
+    left: 90%;
+  }
+}
+@media (max-width: 360px) {
+  .registration__close-wnd {
+    position: unset;
+  }
+  .registration__icon {
+    display: none;
+  }
+}
+
+.registration__logo {
+  display: none;
+  height: 58px;
+  background-color: #3077c6;
+  border-radius: 4px;
+}
+
+@media (max-width: 360px) {
+  .registration__logo--mobile {
+    display: flex;
+  }
+
+  .registration__logo-icon {
+    fill: #ffffff;
+    width: 52px;
+    padding: 3px;
+  }
+}
+
+.registration__install {
+  display: none;
+}
+@media (max-width: 360px) {
+  .registration__install {
+    display: block;
+    font-size: 14px;
+    color: #3077c6;
+  }
+}
+/* registration ends */
 /* Footer starts */
 
 .footer {
   background-color: #10367c;
   color: #ffffff;
 }
+
+.footer__container {
+  max-width: 1232px;
+}
+
 .footer__logo--mobile {
   display: none;
 }
@@ -1029,7 +1227,7 @@ h6 {
 @media (max-width: 360px) {
   /* For mobile phones: */
   .footer__container {
-    padding-top: 40px;
+    padding: 24px 0 40px;
   }
 
   .footer__logo {
