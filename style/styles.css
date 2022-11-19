@@ -450,11 +450,10 @@ h6 {
   font-size: 24px;
   align-items: center;
 }
-@media (max-width: 760px){
+@media (max-width: 760px) {
   .header {
     margin-top: 0;
   }
-
 }
 .header__logo-icon {
   width: 100%;
@@ -668,7 +667,7 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  }
+}
 .homes__title {
   text-align: center;
   margin: 0 auto 105px;
@@ -714,7 +713,7 @@ h6 {
 }
 .homes__slider-next {
   position: absolute;
-  top: 31%;
+  top: 34%;
   left: 100%;
   transform: translate(-50%, -50%);
   display: flex;
